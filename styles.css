@@ -1,125 +1,157 @@
-/* Algemene stijl */
 body {
   font-family: 'Roboto', sans-serif;
-  margin: 0;
-  color: #333;
   line-height: 1.6;
-  background-color: #f7f9fc;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  max-width: 1200px;
+  width: 90%;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
-a {
-  text-decoration: none;
-}
-
-h1, h2, h3 {
-  color: #2E86DE;
-}
-
-/* Header */
 header {
-  background: #ffffff;
-  border-bottom: 1px solid #eaeaea;
-  padding: 20px 0;
+  background-color: #2E86DE;
+  padding: 10px 0;
+  color: white;
 }
 
-header .logo {
-  display: inline-block;
+header .logo img {
+  max-width: 150px;
 }
 
-header nav ul {
+nav ul {
+  display: flex;
+  justify-content: flex-end;
   list-style: none;
   padding: 0;
-  text-align: right;
 }
 
-header nav ul li {
-  display: inline;
-  margin: 0 15px;
+nav ul li {
+  margin-left: 30px;
 }
 
-header nav ul li a {
-  color: #333;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-header nav ul li a:hover {
-  color: #2E86DE;
-}
-
-/* Hero */
-.hero {
-  background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+nav ul li a {
   color: white;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.hero h1 {
-  font-size: 3em;
-}
-
-.hero .button {
-  background: #2E86DE;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-  margin-top: 20px;
+  text-decoration: none;
+  font-size: 18px;
   text-transform: uppercase;
 }
 
-/* Content secties */
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background-image: url('background-image.jpg');
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 80px 0;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+button {
+  background-color: #2E86DE;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #1A68B1;
+}
+
 .content-section {
-  padding: 60px 20px;
+  padding: 60px 0;
+  background-color: #f4f4f4;
+}
+
+.content-section h2 {
+  font-size: 32px;
+  text-align: center;
 }
 
 .services {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .service {
   text-align: center;
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  width: 30%;
+  margin-bottom: 30px;
 }
 
-.service:hover {
-  transform: translateY(-10px);
+.service img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
 
-/* Formulier */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .socials a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+footer .socials a:hover {
+  color: #2E86DE;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
 form input, form textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
-form .button {
-  background: #2E86DE;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
+form button {
+  margin-top: 20px;
 }
 
-/* Footer */
-footer {
-  background: #2E86DE;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+  }
+
+  .service {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
 }
