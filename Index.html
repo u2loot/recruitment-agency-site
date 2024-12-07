@@ -1,61 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[Your Agency Name] - Recruitment Agency</title>
+  <title>Elevore Professionals - Recruitment en Talentmanagement</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Welcome to [Agency Name]</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <!-- SVG-logo -->
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="50" viewBox="0 0 300 100">
+          <polygon points="10,90 50,10 90,90" fill="#2E86DE" />
+          <text x="110" y="60" font-family="Montserrat, sans-serif" font-size="36" fill="#333333" font-weight="700">Elevore</text>
+          <text x="110" y="80" font-family="Roboto, sans-serif" font-size="16" fill="#666666" font-weight="300">Professionals</text>
+        </svg>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#over-ons">Over Ons</a></li>
+          <li><a href="#diensten">Diensten</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  
-  <section id="home">
-    <h2>Your Recruitment Partner</h2>
-    <p>We connect talent with opportunities. Let us help you grow your business.</p>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Verbind talent. Creëer kansen.</h1>
+      <p>Bij Elevore Professionals maken we de perfecte match tussen bedrijven en professionals.</p>
+      <a href="#contact" class="button">Neem contact op</a>
+    </div>
   </section>
-  
-  <section id="about">
-    <h2>About Us</h2>
-    <p>At [Agency Name], we specialize in headhunting and finding the perfect match for your business needs.</p>
+
+  <section id="over-ons" class="content-section">
+    <div class="container">
+      <h2>Over Ons</h2>
+      <p>Met passie en precisie ondersteunen wij bedrijven bij het vinden van de juiste professionals. Ons bureau combineert vakkennis met een persoonlijke aanpak om duurzame samenwerkingen te realiseren.</p>
+    </div>
   </section>
-  
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Executive Search</li>
-      <li>Talent Acquisition</li>
-      <li>Industry-Specific Recruitment</li>
-    </ul>
+
+  <section id="diensten" class="content-section">
+    <div class="container">
+      <h2>Onze Diensten</h2>
+      <div class="services">
+        <div class="service">
+          <img src="https://via.placeholder.com/100" alt="Executive Search">
+          <h3>Executive Search</h3>
+          <p>Zoek en selecteer topprofessionals voor leidinggevende functies.</p>
+        </div>
+        <div class="service">
+          <img src="https://via.placeholder.com/100" alt="Talent Acquisitie">
+          <h3>Talent Acquisitie</h3>
+          <p>Ontdek hoogopgeleid talent dat perfect past binnen uw organisatie.</p>
+        </div>
+        <div class="service">
+          <img src="https://via.placeholder.com/100" alt="Branchespecifieke Werving">
+          <h3>Branchespecifieke Werving</h3>
+          <p>Werving en selectie afgestemd op uw unieke bedrijfsbehoeften.</p>
+        </div>
+      </div>
+    </div>
   </section>
-  
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/example" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      
-      <button type="submit">Send</button>
-    </form>
+
+  <section id="contact" class="content-section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Wij horen graag van u! Vul het onderstaande formulier in of stuur ons een e-mail.</p>
+      <form action="https://formspree.io/f/example" method="POST">
+        <label for="name">Naam:</label>
+        <input type="text" id="name" name="name" placeholder="Uw naam" required>
+        
+        <label for="email">E-mailadres:</label>
+        <input type="email" id="email" name="email" placeholder="Uw e-mail" required>
+        
+        <label for="message">Bericht:</label>
+        <textarea id="message" name="message" placeholder="Uw bericht" required></textarea>
+        
+        <button type="submit" class="button">Verstuur</button>
+      </form>
+    </div>
   </section>
-  
+
   <footer>
-    <p>&copy; 2024 [Agency Name]. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2024 Elevore Professionals. Alle rechten voorbehouden.</p>
+    </div>
   </footer>
 </body>
 </html>
